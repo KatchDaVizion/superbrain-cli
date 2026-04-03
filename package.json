@@ -1,0 +1,29 @@
+{
+  "name": "superbrain-cli",
+  "version": "3.0.0",
+  "description": "SuperBrain Protocol CLI — SN442 Decentralized Knowledge Network",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "sb": "./sb"
+  },
+  "scripts": {
+    "build": "bun build ./src/index.ts --outfile ./sb --target bun",
+    "mcp": "bun ./src/mcp/server.ts",
+    "dev": "bun ./src/index.ts",
+    "dev:mcp": "bun ./src/mcp/server.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "axios": "^1.14.0",
+    "commander": "^14.0.3",
+    "zod": "^4.3.6"
+  }
+}
