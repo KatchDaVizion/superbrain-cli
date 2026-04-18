@@ -22,6 +22,7 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # compiled binary (never commit — rebuild from source)
 sb
+sb-v3
 
 # security — never commit secrets
 *.pem
