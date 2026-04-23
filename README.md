@@ -2,7 +2,7 @@
 
 `sb` — the command-line client for the **SuperBrain SN442** decentralized knowledge network on Bittensor.
 
-Ask the network, share knowledge, check earnings, benchmark your hardware, sync peers — from one terminal binary, with no cloud dependency. Local Ollama inference is tried first; the network is used as a fallback and cross-reference.
+Ask the network, share knowledge, benchmark your hardware, sync peers — from one terminal binary, with no cloud dependency. Local Ollama inference is tried first; the network is used as a fallback and cross-reference.
 
 ## Install
 
@@ -43,7 +43,6 @@ All network calls are hard-capped at 10 seconds — `sb` will never hang.
 | `sb sync` | Pull knowledge directly from all known peers into the local store. |
 | `sb share <text>` | Share knowledge to the SN442 network (permanent, signed). Flags: `--title`, `--hotkey`. |
 | `sb benchmark` | Score your hardware for SN442 mining (CPU, RAM, disk, Ollama latency). |
-| `sb earnings [hotkey]` | Check TAO earnings from shared knowledge for a hotkey. |
 | `sb ingest-zim <path>` | Ingest ZIM (offline Wikipedia) articles into SN442 network and/or local Qdrant. |
 
 Run `sb <command> --help` for per-command options.
@@ -61,9 +60,6 @@ sb ask --network "latest TAO emission rate"
 sb share "The validator scores on 4 factors: supportedness, relevance, novelty, latency" \
   --title "SN442 scoring" \
   --hotkey 5EHQh8frNHpjY5Cw7HuPiNgN4DotBYXWnHk2dvDFbQqJmUTavk
-
-# Check earnings
-sb earnings 5EHQh8frNHpjY5Cw7HuPiNgN4DotBYXWnHk2dvDFbQqJmUTavk
 
 # Run a hardware benchmark
 sb benchmark
