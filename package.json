@@ -4,7 +4,6 @@
   "description": "SuperBrain Protocol CLI — SN442 Decentralized Knowledge Network",
   "module": "src/index.ts",
   "type": "module",
-  "private": true,
   "bin": {
     "sb": "./sb"
   },
